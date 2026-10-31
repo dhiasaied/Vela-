@@ -15,7 +15,7 @@ A modern, premium Flutter parcel-tracking application featuring a live courier m
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Project Objectives](#-project-objectives)
@@ -38,7 +38,7 @@ A modern, premium Flutter parcel-tracking application featuring a live courier m
 
 ---
 
-## 🔭 Overview
+## Overview
 
 **Vela** is a parcel-tracking mobile application built with Flutter and Dart. It lets users follow their shipments from pickup to doorstep through a live, animated map, review each parcel's delivery history, message their courier, and create new shipments — all wrapped in a clean, card-based interface whose accent colour can be changed on the fly.
 
@@ -48,7 +48,7 @@ The app is fully self-contained: it runs entirely offline, uses no third-party p
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Deliver a **premium, real-time tracking experience** with smooth, purposeful motion.
 - Demonstrate **fluid marker animation**: interpolating the courier between location fixes and rotating it to its bearing instead of letting it jump.
@@ -58,16 +58,16 @@ The app is fully self-contained: it runs entirely offline, uses no third-party p
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🏠 Home
+### Home
 - Personalised greeting header with notification badge and quick theme access.
 - **Track by ID** search bar — enter a tracking number (e.g. `M87952264`) to jump straight to its live view.
 - Gradient **LIVE delivery card** with a pulsing indicator, courier info and ETA.
 - Quick actions: **Scan**, **Send**, **Rates** (delivery-rate sheet) and **Theme**.
 - Animated filter chips (*All · Active · Pending · Delivered*) with staggered list entrance.
 
-### 🗺️ Live Package Tracking
+###  Live Package Tracking
 - Custom-painted, pannable and zoomable **city map** (`InteractiveViewer`, up to 3.5×).
 - Route rendered with a **gradient travelled segment** and a **dashed remaining segment**.
 - Courier marker that **glides between simulated GPS fixes** and **rotates to its heading**, with a floating name label.
@@ -80,27 +80,27 @@ The app is fully self-contained: it runs entirely offline, uses no third-party p
   - Vertical **shipment history timeline**.
 - Overflow menu: copy tracking ID to clipboard, save/unsave shipment, change colours.
 
-### 📦 Shipments
+### Shipments
 - Summary stats: total shipments, active deliveries and total spent.
 - Tabbed views: **Ongoing**, **Delivered** and **Saved**.
 - **Swipe-to-save** gesture on any shipment card.
 
-### ✉️ Send a Parcel
+### Send a Parcel
 - Validated form for pickup address, delivery address, receiver and item.
 - Animated **package-size selector** (S / M / L / XL) and **delivery-speed** options (Standard, Express, Same day).
 - Optional parcel insurance toggle.
 - **Animated price counter** that updates as options change.
 - Success dialog with a generated tracking ID and a direct **Track** shortcut; the new shipment appears instantly across the app.
 
-### 💬 Courier Chat
+### Courier Chat
 - Gradient message bubbles with timestamps and auto-scroll.
 - Quick-reply chips and simulated, context-aware courier responses.
 
-### 🔔 Inbox
+### Inbox
 - Read/unread notifications with an unread badge in the navigation bar.
 - **Mark all as read**, and tap-through to the related shipment's tracking view.
 
-### 👤 Profile & 🎨 Theme Studio
+###  Profile &  Theme Studio
 - Profile card with shipment, delivery and saved counters.
 - **Interactive colour selector**:
   - 8 curated gradient presets (*Ember, Violet, Ocean, Emerald, Rose, Gold, Graphite, Lime*).
@@ -110,7 +110,7 @@ The app is fully self-contained: it runs entirely offline, uses no third-party p
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Version | Purpose |
 |---|---|---|
@@ -127,7 +127,7 @@ The app is fully self-contained: it runs entirely offline, uses no third-party p
 
 ---
 
-## 🎨 UI/UX Design
+## UI/UX Design
 
 Vela follows a soft, premium, card-based aesthetic:
 
@@ -154,7 +154,7 @@ Vela follows a soft, premium, card-based aesthetic:
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 Vela uses a lightweight, layered architecture built purely on Flutter's own primitives — no external state-management library.
 
@@ -189,7 +189,7 @@ Vela uses a lightweight, layered architecture built purely on Flutter's own prim
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -215,7 +215,7 @@ flutter pub get
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Run in development
 
@@ -267,7 +267,7 @@ Build outputs are written to the `build/` directory (e.g. `build/app/outputs/flu
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 vela/
@@ -304,7 +304,7 @@ vela/
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 Vela requires **no API keys, environment variables or external services**. Common customisations are made directly in code:
 
@@ -319,7 +319,7 @@ Vela requires **no API keys, environment variables or external services**. Commo
 
 ---
 
-## 🖼️ Screenshots & Preview
+##  Screenshots & Preview
 
 Screenshots have not been added to the repository yet. To include them, place images in a `docs/screenshots/` folder and reference them here, for example:
 
@@ -333,17 +333,7 @@ To preview the app locally right away, run `flutter run -d chrome` and use Chrom
 
 ---
 
-## 🎬 Video Presentation
-
-A video walkthrough has not been published yet. Once recorded, it can be linked here, or a short GIF can be embedded directly:
-
-```markdown
-![Vela demo](docs/demo.gif)
-```
-
----
-
-## ⚡ Performance & Optimization
+## Performance & Optimization
 
 - **Zero third-party runtime packages** — a minimal dependency footprint and fast builds.
 - **No image assets** — the map, route and package illustrations are drawn with `CustomPainter`, keeping the bundle small.
@@ -356,7 +346,7 @@ A video walkthrough has not been published yet. Once recorded, it can be linked 
 
 ---
 
-## 📱 Responsive Design
+##  Responsive Design
 
 Vela is designed **mobile-first for portrait phones**, and adapts gracefully across device sizes:
 
@@ -371,7 +361,7 @@ Vela is designed **mobile-first for portrait phones**, and adapts gracefully acr
 
 ---
 
-## 🔒 Security
+##  Security
 
 - The app makes **no network requests** and connects to no backend or third-party service.
 - **No credentials, API keys or secrets** are stored in the codebase.
@@ -383,38 +373,11 @@ When connecting Vela to a real backend, it is recommended to use HTTPS, secure t
 
 ---
 
-## 🧭 Future Improvements
-
-- 🗺️ Integrate a real map provider with live GPS and geocoding.
-- ☁️ Connect to a backend API for real shipments, couriers and pricing.
-- 💾 Persist preferences (theme colour, dark mode) and data locally.
-- 🔐 Add user authentication and account management.
-- 🔔 Push notifications for delivery status updates.
-- 📷 Real QR/barcode scanning for tracking numbers.
-- 🌍 Localisation (e.g. French and Arabic, including RTL support).
-- 🖥️ Adaptive layouts for tablets and desktop web.
-- 🧪 Broader widget, golden and integration test coverage.
-
----
-
-## 👤 Author
-
-**Dhia Eddine Saied**
-
-- GitHub: [@dhiasaied](https://github.com/dhiasaied)
-
-Contributions, issues and suggestions are welcome — feel free to open an issue or submit a pull request.
-
----
-
 ## 📄 License
 
 No license has been specified for this project yet, so all rights are reserved by default. To make Vela open source, add a `LICENSE` file (for example, the [MIT License](https://choosealicense.com/licenses/mit/)) to the repository root and update this section accordingly.
 
 ---
 
-<div align="center">
-
-Made with 💙 using Flutter
 
 </div>
