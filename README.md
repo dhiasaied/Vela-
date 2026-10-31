@@ -373,7 +373,7 @@ When connecting Vela to a real backend, it is recommended to use HTTPS, secure t
 
 ---
 
-## 📄 License
+## License
 
 No license has been specified for this project yet, so all rights are reserved by default. To make Vela open source, add a `LICENSE` file (for example, the [MIT License](https://choosealicense.com/licenses/mit/)) to the repository root and update this section accordingly.
 
